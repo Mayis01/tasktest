@@ -1,0 +1,80 @@
+@import "../../Styles/CommonStyle.scss";
+
+.MainHeader {
+    @include Container(84px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+        display: flex;
+        div {
+            > ul {
+                display: flex;
+                margin-left: 31px;
+
+                > a {
+                    text-decoration: none;
+                    padding-top: 11px;
+                    > li {
+                        @include headerFooterTextStyle($textColor);
+                        list-style: none;
+                        margin: 0 15px;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+        > a {
+            display: flex;
+            text-decoration: none;
+            margin-top: 11px;
+            > div {
+                > p {
+                    @include headerFooterTextStyle($headerColor);
+                    margin-left: 13px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+.navbar-toggler-icon{
+    background: none !important;
+    border:none !important;
+}
+.language {
+    > button {
+        background: none;
+        border-style: none;
+        /* EN */
+        @include HomeTextStyle(600, 14px, 17px, $mainColor);
+    }
+}
+
+.wrapperResponseMenuLogo {
+
+    display: none;
+}
+.canvasstyle {
+    background-color: rgb(180, 102, 0);
+}
+
+
+
+@media (max-width: 991.9px) {
+    .MainHeader {
+        display: none;
+    }
+
+    .wrapperResponseMenuLogo {
+        display: block;
+        border: none;
+        color: $mainColor;
+    }
+}
+

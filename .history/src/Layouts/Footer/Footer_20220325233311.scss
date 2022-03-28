@@ -1,0 +1,40 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 226px;
+    background-color: #e6e5f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        @include Container(220px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > div {
+            > div {
+                width: 120px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        > div > div {
+            > ul {
+                display: flex;
+                > a {
+                    text-decoration: none;
+                    > li {
+                        list-style: none;
+                        @include HomeTextStyle(400, 16px, 20px, $textColor);
+                        margin: 15px 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

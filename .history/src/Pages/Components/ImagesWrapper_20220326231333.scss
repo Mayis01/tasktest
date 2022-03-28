@@ -1,0 +1,42 @@
+@import "../../Styles/CommonStyle.scss";
+
+// .GalleryMain {
+//     width: 100%;
+//     min-height: 770px;
+// }
+Canva {
+    @include Container(770px);
+    margin-top: 40px;
+}
+yHorizon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+@media (max-width: 1250px) {
+    .Horizon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 995px) {
+    .Horizon {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+}
+
+@media (max-width: 751px) {
+    .Horizon {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 525px) {
+    .Horizon {
+        grid-template-columns: repeat(1, 2fr);
+        margin-left: 135px;
+    }
+}

@@ -1,0 +1,24 @@
+.modalWrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+}
+
+.modalWrapper .open{
+    height: 100%;
+    display: block;
+}
+
+.modalWrapper .close{
+    height: 0;
+    display: none;
+
+}
+
+.modalBody{
+    max-width: 500px;
+    margin: auto;
+    back
+}

@@ -1,0 +1,45 @@
+.modalWrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+}
+
+.modalWrapper .open{
+    height: 100%;
+    display: block;
+}
+
+.modalWrapper .close{
+    height: 0;
+    display: none;
+
+}
+
+.modalBody{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.modalBody::-webkit-scrollbar{
+   width: 0;
+   background: transparent;
+}
+
+.modalBody{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ }
+
+ .modalClose{
+     text-align: right;
+     margin-top: -15px;
+     fsi40px
+ }

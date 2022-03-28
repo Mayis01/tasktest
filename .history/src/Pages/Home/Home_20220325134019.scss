@@ -1,0 +1,42 @@
+@import "../../Styles/CommonStyle.scss";
+
+.HomeSection {
+    width: 100%;
+    min-height: 500px;
+    background-color: aqua;
+    padding-top: 40px;
+    > div {
+       
+        > div {
+
+            @include Container(400px);
+            background: url("../../Images/HomeBackground.png") no-repeat center;
+            background-size: cover;
+            border-radius: 10px;
+            > div {
+                > div:first-child {
+                    width: 311px;
+                    height: 88px;
+                    padding-top: 24px;
+                    padding-left: 29px;
+                    > h1 {
+                        /* Stay with us feel like home */
+                        @include HomeTextStyle(500, 36px, 44px, $mainColor);
+                    }
+                }
+
+                > div:last-child {
+                    width: 458px;
+                    height: 40px;
+                    padding-top: 20px;
+                    padding-left: 29px;
+                    > h2 {
+                        @include HomeTextStyle(400, 16px, 20px, $headerColor);
+
+                        /* Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices. */
+                    }
+                }
+            }
+        }
+    }
+}

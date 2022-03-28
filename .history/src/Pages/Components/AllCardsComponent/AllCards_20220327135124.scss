@@ -1,0 +1,21 @@
+@import "../../../Styles/CommonStyle.scss";
+.Description {
+
+    >h1{
+        /* Pizza */
+@include HomeTextStyle(500,20px,24px $headerColor);
+
+
+
+
+    }
+    > div {
+        /* Rectangle 33 */
+
+        width: 53px;
+        height: 3px;
+
+        background-color: #090076;
+        border-radius: 50px;
+    }
+}

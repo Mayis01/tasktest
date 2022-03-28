@@ -1,0 +1,23 @@
+[
+    {
+        "key": "Menu1",
+        "menuItem": "Home",
+        "link":"/"
+    },
+    {
+        "key": "Menu2",
+        "menuItem": "Gallery",
+        "link":"Gallery"
+        
+    },
+    {
+        "key": "Menu3",
+        "menuItem": "Services",
+        "link":"Services"
+    },
+    {
+        "key": "Menu4",
+        "menuItem": "Rooms",
+        "link":"Rooms"
+    }
+]

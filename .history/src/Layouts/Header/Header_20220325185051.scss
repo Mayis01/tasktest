@@ -1,0 +1,45 @@
+@import "../../Styles/CommonStyle.scss";
+.MainHeader:
+.MainHeader {
+    @include Container(84px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:  opacity 0.5s ease 0.5s;
+    > div {
+        display: flex;
+        div {
+            > ul {
+                display: flex;
+                margin-left: 31px;
+            
+                > a {
+                    text-decoration: none;
+                    padding-top: 11px;
+                    > li {
+                        @include headerFooterTextStyle($textColor);
+                        list-style: none;
+                        margin: 0 15px;
+                       
+                        &:hover {
+                            cursor: pointer;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+        > a {
+            display: flex;
+            text-decoration: none;
+            margin-top: 11px;
+            > div {
+                > p {
+                    @include headerFooterTextStyle($headerColor);
+                    margin-left: 13px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

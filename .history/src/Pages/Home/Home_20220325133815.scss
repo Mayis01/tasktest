@@ -1,0 +1,15 @@
+@import "../../Styles/CommonStyle.scss";
+
+.HomeSection {
+    width: 100%;
+    min-height: 500px;
+    background-color: aqua;
+    padding-top: 40px;
+    > div {
+        @include Container(400px);
+        background: url("../../Images/HomeBackground.png") no-repeat center;
+        background-size: cover;
+        border-radius: 10px;
+        
+    }
+}

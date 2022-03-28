@@ -1,0 +1,62 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 400px;
+    background-color: #e6e5f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        @include Container(220px);
+        display: flex;
+      
+        align-items: center;  
+     
+        
+    }
+}
+
+.Icons {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  >div{
+      padding: 0 30px;
+  }
+}
+
+.footerMenu {
+
+display: flex;
+justify-content: center;
+    > ul {
+        margin-top: 20px;
+        display: flex;
+        > a {
+            text-decoration: none;
+            > li {
+                list-style: none;
+                @include HomeTextStyle(400, 16px, 20px, $textColor);
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footerBorder {
+    width: 1240px;
+    height: 1px;
+    background-color: white;
+    
+}
+
+.CopyRight{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px;
+    padding-bottom: 20px;
+}

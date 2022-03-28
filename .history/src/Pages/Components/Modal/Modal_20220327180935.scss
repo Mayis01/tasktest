@@ -1,0 +1,106 @@
+@import "../../../Styles/CommonStyle.scss";
+
+.modalWrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.modalWrapper .open {
+    height: 100%;
+    display: block;
+}
+
+.modalWrapper .close {
+    height: 0;
+    display: none;
+}
+
+.modalBody {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.modalBody::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.modalBody {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.modalClose {
+    text-align: right;
+    margin-top: -15px;
+    font-size: 20px;
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+.ModalCardImgAndPrice {
+    display: flex;
+}
+
+.PriceDescription {
+    margin-top: 20px;
+    > h1 {
+        @include HomeTextStyle(500, 22px, 27px, $mainColor);
+        margin-left: 10px;
+    }
+    > h2 {
+        /* Gravida nibh */
+
+        @include HomeTextStyle(500, 18px, 22px, $headerColor);
+    }
+}
+
+.CheckAccsesouares {
+    display: flex;
+    justify-content: space-between;
+    
+    > p {
+        @include HomeTextStyle(400, 17px, 17px, $textColor);
+        >input[type="checkbox"]{
+            width: 24px;
+            height: 24px;
+            color:$mainColor;
+            
+        }
+    }
+}
+
+.Count {
+    display: flex;
+    justify-content: space-between;
+    > div {
+        display: flex;
+    }
+}
+
+.Bton {
+    width: 370px;
+    height: 42px;
+    border-style: none;
+    background-color: $mainColor;
+    border-radius: 10px;
+    margin-left: 40px;
+    > div {
+        margin-top: 10px;
+
+        > p {
+            @include HomeTextStyle(300, 18px, 22px, white);
+            text-align: center;
+            /* Add To Cart */
+        }
+    }
+}

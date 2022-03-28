@@ -1,0 +1,46 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 226px;
+    background-color: #e6e5f1;
+    > div {
+        @include Container(220px);
+        > div {
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        > div {
+            > ul {
+                display: flex;
+                >a{
+                    text-decoration: none;
+                    >li{
+                        list-style: none;
+                        @include HomeTextStyle()
+                        /* Terms Of Use */
+
+position: absolute;
+width: 107px;
+height: 20px;
+left: calc(50% - 107px/2 + 47.5px);
+top: 120px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+color: #5A5A5A;
+
+
+                    }
+                }
+            }
+        }
+    }
+}

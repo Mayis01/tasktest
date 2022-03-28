@@ -1,0 +1,8 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Error{
+height: 100;
+  >p{
+@include HomeTextStyle(600,50px,10px,$headerColor)
+  }  
+}

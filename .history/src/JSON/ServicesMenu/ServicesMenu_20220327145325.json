@@ -1,0 +1,63 @@
+[
+    {
+        "key":"ServiceMenu1",
+        "Description": "Pizza",
+        "Link":"Pizza"
+    },
+    {"key":"ServiceMenu2",
+        "Description": "Soups",
+        "Link":"Soups"
+    },
+    {"key":"ServiceMenu3",
+        "Description": "Main Dishes",
+        "Link":"Main Dishes"
+    },
+    {"key":"ServiceMenu4",
+        "Description": "Salads",
+        "Link":"Salads"
+    },
+    {"key":"ServiceMenu5",
+        "Description": "Dessert",
+        "Link":"Dessert"
+    },
+    {"key":"ServiceMenu6",
+        "Description": "For Kids",
+        "Link":"For Kids"
+    },
+    {"key":"ServiceMenu7",
+        "Description": "Soups",
+        "Link":"Soups"
+    },
+    {"key":"ServiceMenu8",
+        "Description": "Main Dishes",
+        "Link":"Main Dishes"
+    },
+    {"key":"ServiceMenu1",
+        "Description": "Salads",
+        "Link":"Salads"
+    },
+    {
+        "Description": "Dessert",
+        "Link":"Dessert"
+    },
+    {
+        "Description": "For Kids",
+        "Link":"For Kids"
+    },
+    {
+        "Description": "Soups",
+        "Link":"Soups"
+    },
+    {
+        "Description": "Main Dishes",
+        "Link":"Main Dishes"
+    },
+    {
+        "Description": "Salads",
+        "Link":"Salads"
+    },
+    {
+        "Description": "Dessert",
+        "Link":"Dessert"
+    }
+]

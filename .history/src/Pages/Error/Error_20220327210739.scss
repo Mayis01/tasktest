@@ -1,0 +1,10 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Error {
+    height: 500px;
+    padding-top: 100px;
+    > p {
+        @include HomeTextStyle(600, 50px, 10px, $headerColor);
+        text-align: center;
+    }
+}

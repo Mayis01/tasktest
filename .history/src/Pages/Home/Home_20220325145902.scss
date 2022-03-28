@@ -1,0 +1,64 @@
+@import "../../Styles/CommonStyle.scss";
+
+.HomeSection {
+    width: 100%;
+    min-height: 500px;
+    background-color: aqua;
+    padding-top: 40px;
+    
+    >div{
+        @include Container(600px);
+        position: relative;
+    }
+}
+.HeaderBG {
+   
+    min-height: 400px;
+    background: url("../../Images/HomeBackground.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.boxH1 {
+    width: 458px;
+    padding-top: 44px;
+    padding-left: 24px;
+    > h1 {
+        /* Stay with us feel like home */
+        @include HomeTextStyle(500, 36px, 44px, $mainColor);
+    }
+    > h2 {
+        @include HomeTextStyle(400, 16px, 20px, $headerColor);
+
+        /* Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices. */
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-indicators .active {
+    background-color: $mainColor !important;
+}
+
+.carousel-indicators > button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: $headerColor !important;
+   margin
+}
+
+.formStyle {
+    width: 1021px;
+    min-height: 106px;
+    padding: 20px 20px 40px 20px;
+    /* Frame 5 */
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left:100px;
+    position: absolute;
+    bottom: 120px;
+}

@@ -1,0 +1,62 @@
+@import "../../../Styles/CommonStyle.scss";
+
+.Section {
+    @include Container(1500px);
+}
+.Description {
+    > h1 {
+        @include HomeTextStyle(500, 20px, 24px, $headerColor);
+    }
+    > div {
+        width: 53px;
+        height: 3px;
+        background-color: #090076;
+        border-radius: 50px;
+    }
+}
+
+.Horizon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Card {
+    width: 198px;
+    min-height: 302px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    background-color: #090076;
+    > div {
+        width: 198px;
+        >img{
+            border-radius: 10px;
+        }
+    }
+    > h1 {
+        @include HomeTextStyle(500, 18px, 22px, $headerColor);
+        text-align: left;
+        margin: 5px 0;
+    }
+    > p {
+        @include HomeTextStyle(400, 14px, 17px, $textColor);
+
+        /* Platea nunc cum amet odio lectus. Cras ut sem aliquet in. */
+    }
+    > h3 {
+        /* $60.00 */
+        @include HomeTextStyle(500, 22px, 27px, $headerColor);
+        text-align: right;
+        margin-top: 15px;
+    }
+    > button {
+        /* Frame 20 */
+        height: 42px;
+        width: 178px;
+        border-style: none;
+        background: #090076;
+        border-radius: 10px;
+        @include HomeTextStyle(400, 18px, 22px, white);
+        text-align: center;
+    }
+}

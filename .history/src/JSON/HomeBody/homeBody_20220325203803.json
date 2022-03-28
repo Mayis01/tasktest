@@ -1,0 +1,95 @@
+[
+    {
+        "Head": "Gallery",
+        "Images": [
+            {
+                "image": "https://i.ibb.co/0syFt8S/unsplash-oxe-CZrodz78.jpg",
+                "p": ""
+            },
+            {
+                "image": "https://i.ibb.co/XWvDhQc/unsplash-AH8z-KXq-FITA.jpg",
+                "p": ""
+            },
+            {
+                "image": "https://i.ibb.co/BrKLHn9/unsplash-67-s-Oi7m-VIk.jpg",
+                "p": ""
+            },
+            {
+                "image": "https://i.ibb.co/d2M65F7/unsplash-PJNO2s-Llb-B8.jpg",
+                "p": ""
+            },
+            {
+                "image": "https://i.ibb.co/f2MLZV7/unsplash-l-Trbj-Fd8-Iwo.jpg",
+                "p": ""
+            },
+            {
+                "image": "https://i.ibb.co/16SmSYv/unsplash-5-BV56-Sdv-Lmo.jpg",
+                "p": ""
+            }
+        ],
+
+        "link":"Gallery"
+    },
+    {
+        "Head": "Rooms",
+        "Images": [
+            {
+                "image": "https://i.ibb.co/0syFt8S/unsplash-oxe-CZrodz78.jpg",
+                "p": "Standart"
+            },
+            {
+                "image": "https://i.ibb.co/XWvDhQc/unsplash-AH8z-KXq-FITA.jpg",
+                "p": "Deluxe"
+            },
+            {
+                "image": "https://i.ibb.co/BrKLHn9/unsplash-67-s-Oi7m-VIk.jpg",
+                "p": "Family"
+            },
+            {
+                "image": "https://i.ibb.co/d2M65F7/unsplash-PJNO2s-Llb-B8.jpg",
+                "p": "Shale"
+            },
+            {
+                "image": "https://i.ibb.co/f2MLZV7/unsplash-l-Trbj-Fd8-Iwo.jpg",
+                "p": "Vestibulum"
+            },
+            {
+                "image": "https://i.ibb.co/16SmSYv/unsplash-5-BV56-Sdv-Lmo.jpg",
+                "p": "Suspendisse"
+            }
+        ],
+
+        "link":"Rooms"
+    },
+    {
+        "Head": "Services",
+        "Images": [
+            {
+                "image": "https://i.ibb.co/0syFt8S/unsplash-oxe-CZrodz78.jpg",
+                "p": "Standart"
+            },
+            {
+                "image": "https://i.ibb.co/XWvDhQc/unsplash-AH8z-KXq-FITA.jpg",
+                "p": "Deluxe"
+            },
+            {
+                "image": "https://i.ibb.co/BrKLHn9/unsplash-67-s-Oi7m-VIk.jpg",
+                "p": "Family"
+            },
+            {
+                "image": "https://i.ibb.co/d2M65F7/unsplash-PJNO2s-Llb-B8.jpg",
+                "p": "Shale"
+            },
+            {
+                "image": "https://i.ibb.co/f2MLZV7/unsplash-l-Trbj-Fd8-Iwo.jpg",
+                "p": "Vestibulum"
+            },
+            {
+                "image": "https://i.ibb.co/16SmSYv/unsplash-5-BV56-Sdv-Lmo.jpg",
+                "p": "Suspendisse"
+            }
+        ],
+
+        "link":"Rooms"
+    }
+]

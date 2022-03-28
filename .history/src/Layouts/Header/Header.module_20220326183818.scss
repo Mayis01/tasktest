@@ -1,0 +1,93 @@
+@import "../../Styles/CommonStyle.scss";
+
+@mixin UL($flex, $ml, $liMargin) {
+    display: $flex;
+    margin-left: $ml;
+
+    > a {
+        text-decoration: none;
+        padding-top: 11px;
+        > li {
+            @include headerFooterTextStyle($textColor);
+            list-style: none;
+            margin: $liMargin;
+
+            &:hover {
+                cursor: pointer;
+                color: $mainColor;
+            }
+        }
+    }
+}
+.MainHeader {
+    @include Container(84px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+        display: flex;
+        div {
+           >ul{
+               @include UL(flex, 31px,0 15px);
+           } 
+        }
+        > a {
+            display: flex;
+            text-decoration: none;
+            margin-top: 11px;
+            > div {
+                > p {
+                    @include headerFooterTextStyle($headerColor);
+                    margin-left: 13px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+.ul {
+   @include UL(null,null,0 0);
+}
+
+.bder{
+    width: 100;
+    height: 2px;
+    background-color: black;
+}
+.responseLogo,
+.language {
+    display: none;
+}
+
+.navbar-toggler-icon > path {
+    fill: $mainColor !important;
+}
+.language {
+    > button {
+        background: none;
+        border-style: none;
+        /* EN */
+        @include HomeTextStyle(600, 14px, 17px, $mainColor);
+    }
+}
+
+.wrapperResponseMenuLogo {
+    display: none;
+}
+
+
+@media (max-width: 991.9px) {
+    .MainHeader {
+        display: none;
+    }
+
+    .wrapperResponseMenuLogo {
+        display: block;
+    }
+
+    .responseLogo,
+    .language {
+        display: block;
+    }
+}

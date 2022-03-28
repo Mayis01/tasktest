@@ -1,0 +1,11 @@
+@import "../../Styles/CommonStyle.scss";
+
+.CanvasForImgs {
+
+    @include 
+    > div {
+        > h1 {
+            @include HomeTextStyle(500, 26px, 32px, $headerColor);
+        }
+    }
+}

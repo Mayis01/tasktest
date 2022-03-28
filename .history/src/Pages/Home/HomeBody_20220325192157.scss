@@ -1,0 +1,19 @@
+@import "../../Styles/CommonStyle.scss";
+
+.CanvasForImgs {
+    @include Container(1000px);
+    > div {
+        > h1 {
+            @include HomeTextStyle(500, 26px, 32px, $headerColor);
+        }
+    }
+}
+
+.BlueBorder {
+    width: 92px;
+    height: 3px;
+    background-color: $mainColor;
+    border-radius: 50px;
+    opacity: 1;
+    transition: opacity 0.6 ease 5s;
+} /* Rectangle 33 */

@@ -1,0 +1,26 @@
+@import "../../../Styles/CommonStyle.scss";
+.Description {
+
+    >h1{
+        /* Pizza */
+@include HomeTextStyle(500,20px,24px $headerColor)
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #161616;
+
+
+    }
+    > div {
+        /* Rectangle 33 */
+
+        width: 53px;
+        height: 3px;
+
+        background-color: #090076;
+        border-radius: 50px;
+    }
+}

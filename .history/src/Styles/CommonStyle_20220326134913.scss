@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital@1&display=swap');
+
+$mainFontFamily: "Montserrat", sans-serif;
+$mainColor: #090076;
+$textColor: #5a5a5a;
+$headerColor: #161616;
+
+@mixin Container($minHeight) {
+    max-width: 1270px !important;
+    width: 100%;
+    min-height: $minHeight;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin headerFooterTextStyle($selectedColor) {
+    font-family: $mainFontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: $selectedColor;
+    /* Inside auto layout */
+}
+
+@mixin  grid($cols, $margin) {
+    float: left;
+    margin-right: $margin;
+    margin-bottom: $margin
+    height:150px;
+    width: ((100% - (($cols - 1) * $margin )) / $cols);
+
+    &:nth-child(#{$cols}n){
+        margin-right: 0;
+    }
+}
+
+@mixin HomeTextStyle($HomeFontWeight, $HomeFontSize, $HomeLineHeight, $HomeColor) {
+    font-family: $mainFontFamily;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: $HomeFontWeight;
+    font-size: $HomeFontSize;
+    line-height: $HomeLineHeight;
+    color: $HomeColor;
+}
+
+/* Gallery */

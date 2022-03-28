@@ -1,0 +1,79 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 230px;
+    padding-top: 90px;
+    background-color: #e6e5f1;
+>div{
+    @include Container(null)
+}
+    
+}
+
+.Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        padding: 0 30px;
+    }
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: center;
+    > ul {
+        margin-top: 50px;
+        display: flex;
+        > a {
+            text-decoration: none;
+            > li {
+                list-style: none;
+                @include HomeTextStyle(400, 16px, 20px, $textColor);
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footerBorder {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.CopyRight {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding-bottom: 20px;
+    > p {
+        @include HomeTextStyle(400, 12px, 15px, $textColor) /* © 2022 All Rights Reserved */;
+    }
+}
+
+
+@media(max-width:1120px) {
+    footerMenu {
+    display: flex;
+    justify-content: center;
+    > ul {
+        margin-top: 50px;
+        display: flex;
+        > a {
+            text-decoration: none;
+            > li {
+                list-style: none;
+                @include HomeTextStyle(400, 16px, 20px, $textColor);
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+}

@@ -1,0 +1,21 @@
+@import "../../Styles/CommonStyle.scss";
+
+.GalleryMain {
+    width: 100%;
+    min-height: 770px;
+}
+.GalleryCanva {
+    @include Container(770px);
+    margin-top: 40px;
+}
+.GalleryHorizon {
+  
+    margin-top: 30px;
+    >div{
+        @include grid(5,0%)
+    }
+}
+
+@media(max-width:1320px){
+    
+}

@@ -1,0 +1,207 @@
+@import "../../Styles/CommonStyle.scss";
+
+.HomeSection {
+    width: 100%;
+    min-height: 500px;
+    padding-top: 40px;
+
+    > div {
+        @include Container(500px);
+        position: relative;
+    }
+}
+.HeaderBG {
+    min-height: 400px;
+    background: url("../../Images/HomeBackground.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.boxH1 {
+    width: 458px;
+    padding-top: 44px;
+    padding-left: 24px;
+    > h1 {
+        /* Stay with us feel like home */
+        @include HomeTextStyle(500, 36px, 44px, $mainColor);
+    }
+    > h2 {
+        @include HomeTextStyle(400, 16px, 20px, $headerColor);
+
+        /* Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices. */
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-indicators .active {
+    background-color: $mainColor !important;
+}
+
+.carousel-indicators > button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: $headerColor !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: 40px !important;
+}
+
+.formStyle {
+    width: 1021px;
+    height: 106px;
+    padding-left: 40px;
+    padding-right: 20px;
+    /* Frame 5 */
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+
+    > form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > div {
+            margin-top: 20px;
+            > h3 {
+                /* Check In */
+                @include HomeTextStyle(500, 18px, 22px, $mainColor);
+            }
+
+            > p {
+                /* 21.02.2022 */
+                @include HomeTextStyle(400, 18px, 22px, $headerColor);
+            }
+            > input[type="date"] {
+                margin-bottom: 15px;
+                border: none;
+                color: $textColor;
+            }
+
+            > input[type="date"]::-webkit-calendar-picker-indicator {
+                background-image: url("./../../Images/calendarIcon.png");
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                background-size: 20px;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            > div {
+                width: 110px;
+                height: 45px;
+                display: flex;
+                justify-content: space-between;
+                > button {
+                    /* Frame 31 */
+
+                    background: #f2f2f8;
+                    border-radius: 5px;
+                    width: 34px;
+                    height: 34px;
+                    border-style: none;
+                    color: $mainColor;
+                    font-size: 20px;
+                }
+
+                > p {
+                    /* 1 */
+
+                    @include HomeTextStyle(400, 18px, 22px, $headerColor);
+                    padding-top: 8px;
+                }
+            }
+        }
+        > button {
+            width: 198px;
+            height: 66px;
+            border-style: none;
+            background-color: $mainColor;
+            border-radius: 10px;
+            @include HomeTextStyle(300, 18px, 22px, #ffff) /* Check Availability */;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .carousel-indicators > button {
+       
+        margin-bottom:100px !important;
+    }
+    .formStyle {
+        width: 600px;
+        height: 250px;
+        top: 290px;
+        left: 300px;
+        > form {
+            display: grid;
+            justify-content: center;
+           grid-template-columns:200px auto ;
+           grid-template-rows:120px 50px 80px;
+           
+            > div {
+                margin-top: 0;
+            }
+            > button {
+                width: 300px;
+                height: 42px;
+                /* Check Availability */
+                @include HomeTextStyle(400, 18px, 22px, white);
+               
+            }
+        }
+    }
+
+    .Room {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1110px) {
+
+   
+    .formStyle {
+      
+        left: 250px;
+        
+           
+    }
+           
+}
+
+
+@media (max-width: 1000px) {
+    .formStyle {
+        width: 600px;
+        height: 250px;
+        top: 290px;
+        left: 190px;
+        
+           
+    }
+           
+}
+
+
+
+@media (max-width: 920px) {
+
+   
+    .formStyle {
+        width: 600px;
+        height: 250px;
+        top: 290px;
+        left: 190px;
+        
+           
+    }
+           
+}

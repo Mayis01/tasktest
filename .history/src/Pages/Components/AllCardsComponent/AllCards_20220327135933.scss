@@ -1,0 +1,20 @@
+@import "../../../Styles/CommonStyle.scss";
+
+.Description {
+    > h1 {
+      
+        @include HomeTextStyle(500, 20px, 24px ,$headerColor);
+    }
+    > div {
+
+        width: 53px;
+        height: 3px;
+        background-color: #090076;
+        border-radius: 50px;
+    }
+}
+
+.Horizon{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,27 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 226px;
+    background-color: #e6e5f1;
+    > div {
+        @include Container(220px);
+        > div {
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        > div {
+            > ul {
+                display: flex;
+                >a{
+                    text-decoration: none;
+                    >li{
+                        lis
+                    }
+                }
+            }
+        }
+    }
+}

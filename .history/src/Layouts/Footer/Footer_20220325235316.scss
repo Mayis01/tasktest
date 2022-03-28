@@ -1,0 +1,77 @@
+@import "../../Styles/CommonStyle.scss";
+
+.Footer {
+    width: 100%;
+    min-height: 230px;
+    padding-top: 90px;
+    background-color: #e6e5f1;
+
+
+    > div {
+        @include Container(220px);
+        
+    }
+}
+
+.Icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        padding: 0 30px;
+    }
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: center;
+    > ul {
+        margin-top: 20px;
+        display: flex;
+        > a {
+            text-decoration: none;
+            > li {
+                list-style: none;
+                @include HomeTextStyle(400, 16px, 20px, $textColor);
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footerBorder {
+    width: 1240px;
+    height: 1px;
+    background-color: white;
+    margin-top: 60px;
+}
+
+.CopyRight {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding-bottom: 20px;
+    >p{
+        @include HomeTextStyle()
+        /* © 2022 All Rights Reserved */
+
+position: absolute;
+width: 161px;
+height: 15px;
+left: 639px;
+top: 191px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #5A5A5A;
+
+
+    }
+}

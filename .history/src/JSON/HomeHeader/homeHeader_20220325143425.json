@@ -1,0 +1,26 @@
+[
+    {
+       "key":"HeaderSectionkey1",
+        
+      
+        "item.h1":"Stay With Us Feel Like Home",
+        "item.h2":"Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices."
+
+    },
+    {
+        "key":"HeaderSectionkey2",
+        "backfroundImg":"https://i.ibb.co/cypqfPy/Home-Background.png",
+
+        "item.h1":"Stay With Us Feel Like Home",
+        "item.h2":"Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices."
+
+    },
+    {
+        "key":"HeaderSectionkey3",
+        "backfroundImg":"https://i.ibb.co/cypqfPy/Home-Background.png",
+      
+        "item.h1":"Stay With Us Feel Like Home",
+        "item.h2":"Leo malesuada porta ultricies vel fusce. Faucibus nulla vitae faucibus netus tristique integer ultrices."
+
+    }
+]
