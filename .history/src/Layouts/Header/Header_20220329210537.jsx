@@ -19,14 +19,13 @@ export default function Header() {
       <header className={style.MainHeader}>
         <div className={style.MenuLogo}>
           <div>
-         
+            {/* Click in */}
             <Link to={"/"}>
               <img src={logo} alt="LO GO" />
             </Link>
           </div>
           <div>
             <ul className={style.ul}>
-                 {/* Click in Services link to see modal*/}
               {Menu.map((item) => {
                 return (
                   <Link to={"/" + item.link}>
